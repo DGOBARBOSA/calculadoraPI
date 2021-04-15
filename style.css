@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/*
+@media(min-width: 900px)
+
+  */
+
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 15px;
+
+  }
+
+
+  body a{
+    color: azure;
+    text-decoration: none;
+  }
+
+/*EM - utiliza no cálculo o valor do elemento pai, criando uma hierarquia no cálculo(%).*/
+
+.banner{
+  width: 100vw;
+  height: 17vh;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  background: linear-gradient( #ffffff, #000000);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding-inline: 1vh;
+
+}
+
+  /*
+  align-items: center;
+  .box {
+  display: flex;
+  width: 500px;
+  height: 400px;
+}
+  */
+
+/*
+background: url(imagens/logopi.png) no-repeat center;
+
+#bannerimg{
+  width: 100%;
+}
+height: inherit;
+*/
+
+
+.bannertitulo {
+
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  align-items: center;
+  height: 40%;
+  /* top: 7vh; */
+  /* left: 1vw; */
+  /* position: absolute;
+
+
+  /*
+  text-align: center;
+  top: 4vh;
+  width: 100%;
+  padding: 5px;
+  left: 1vw;
+  align-items: center;
+
+  */
+
+}
+.bannertitulo h1{
+  color: rgb(13, 13, 14);
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.header-navbar {
+  width: 100%;
+  height: 40%;
+  align-items: center;
+
+}
+
+.header-navbar ul {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: aqua; */
+}
+
+.header-navbar ul li {
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 1px;
+  margin: 5px 2%;
+  /* color: aqua;
+  margin: 1%;
+  */
+}
+
+.header-navbar ul li .active {
+  color: #0099ff;
+}
+
+.header-navbar ul li a:hover {
+  color: #0099ff;
+}
+
+
+body{
+  background-image: url(imagens/pi-wallpaper-5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/*
+background-size: 100% 100%;
+background-size: 100px 100px;
+  background-repeat: repeat;
+*/
+
+body a {
+  /* color: #777; */
+  text-decoration: none;
+  /* transition: 0.4s; */
+}
+
+body ul {
+  list-style: none;
+}
+
+body, section{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+/*REM - é calculado em cima do valor da TAG Body, Html ou Navegador(fator multiplicador)*/
+
+.sections h4{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+
+}
+
+
+.sections{
+  background-color: #C0C0C0;
+  /* background-color: white; */
+  border: 1px solid black;
+  opacity: 0.8;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+/*
+  margin: 30px;
+*/
+
+}
+
+
+.sec_conteudo {
+
+  /*EM - utiliza no cálculo o valor do elemento pai, criando uma hierarquia no cálculo(%).*/
+  /*REM - é calculado em cima do valor da TAG Body, Html ou Navegador(fator multiplicador)*/
+
+  /* background-color: chartreuse; */
+  width: 90%;
+  margin: 0.5em;
+  padding: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+
+
+.sec_conteudo *{
+  margin: 2px;
+  font-size: 1.2em;
+}
+
+
+/* mantido o nome de cada div para não alterar o JS do calculo*/
+.resultadoInt,
+.resultPotencia,
+.resultCircunf,
+.resultArea,
+.resultAbase,
+.resultATotal,
+.resultVCubo {
+  width: 100%;
+  margin: 2px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* mantido o nome de cada div para não alterar o JS do calculo*/
+.resultadoInt,
+.resultPotencia,
+.resultCircunf,
+.resultArea,
+.resultAbase,
+.resultATotal,
+.resultVCubo h4{
+
+  color: red;
+}
+
+
+
+.sec_conteudo button{
+  width: 120px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #ffffff -14%, #484848 90%);
+  box-shadow: 3px 3px 3px 1px rgb(74 80 186 / 80%);
+
+}
+.sec_conteudo input{
+  width: 100px;
+}
+
+.sec_conteudo button:hover{
+
+  color: #0771b8;
+
+}
+button:active{
+  transform: translateY(2px);
+
+}
+
+.imgcubo img{
+  margin: auto;
+  width: 90%;
+  height: auto;
+
+}
+
+.imgvolcubo img{
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
+
+.sections .sec_conteudo #imgvolcubo {
+
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.rodape{
+  margin: 20px;
+  color: azure;
+}
+
+.rodape a:hover{
+  color:#0099ff;
+}

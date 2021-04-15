@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/logopi.png" type="image/x-icon">
+  <title>Calculadora &pi; </title>
+</head>
+
+<header>
+  <div class="banner">
+    <!-- <div id="bannerimg"> -->
+    <div class="bannertitulo" id="homeProjeto">
+      <h1>Projeto Prático Mód.3 – Faculdade iv2</h1>
+    </div>
+    <!-- <a href="" class="header-brand">Galleria</a> -->
+    <nav class="header-navbar">
+      <ul>
+        <li>
+          <a href="#homeProjeto">Home</a>
+
+        </li>
+        <li>
+          <a href="#numerosinteiros">Numeros Inteiros</a>
+        </li>
+        <li>
+          <a href="#calculandoPotencia">Potência </a>
+        </li>
+        <li>
+          <a href="#circuloCircunf">Círculo e Circunferência</a>
+        </li>
+        <li>
+          <a href="#calcCubo">Cubo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- </div> -->
+  </div>
+</header>
+
+<body>
+  <section class="sections" id="numerosinteiros">
+    <h4> Número inteiro </h4>
+    <div class="sec_conteudo">
+      <label for="varInt">Calculando o número fracionado em inteiro mais próximo. Insira o número(Ex. 2.345): </label>
+      <input id="varInt" type="number">
+      <button id="btnint">Calcular</button>
+      <div class="resultadoInt">
+      </div>
+    </div>
+  </section>
+
+  <section class="sections" id="calculandoPotencia">
+    <div>
+      <h4> Calculando a Potência dos Números </h4>
+      <img src="imagens/potencia.jpg" alt="calculo potencia">
+    </div>
+    <div class="sec_conteudo">
+      <label for="varB"> Insira o número Base: </label>
+      <input id="varB" type="number">
+      <label for="varE"> Insira o número Expoente: </label>
+      <input id="varE" type="number">
+      <button id="btnExpo">Calcular</button>
+      <div class="resultPotencia">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sections" id="circuloCircunf">
+    <h4> Medidas de um Círculo</h4>
+    <img src="imagens/circulo.jpg" alt="circulo marcado com diametro">
+    <div class="sec_conteudo">
+      <!--semântica correta (Math.PI, Math.pow(x, y));-->
+      <p>Calculando a Circunferência(M) de um Círculo (C = 2 * π * raio)</p>
+      <label for="raio"> Qual a medida do Raio(M):</label>
+      <input type="number" id="raio">
+
+      <button id="btnCircunf">Calcular</button>
+      <div class="resultCircunf">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+
+      <p>Calculando a Área do Círculo (A = π * r²)</p>
+      <button id="btnArea">Calcular</button>
+      <div class="resultArea">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+    </div>
+  </section>
+
+  <section class="sections" id="calcCubo">
+
+    <h4>Calculos referentes a medida de um Cubo</h4>
+
+    <div class="imgcubo">
+      <img src="imagens/area-do-quadrado-1.png" alt="desenho de um cubo">
+    </div>
+
+    <div class="sec_conteudo">
+      <label for="abase"> Qual a medida do lado(L):</label>
+      <input type="number" id="lado">
+
+      <button id="btnAbase" onclick="calcBase()">Calcular</button>
+      <p>Área da Base (Abase = L²)</p>
+      <div class="resultAbase">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+
+      <p>Área total (At = Abase * 6)</p>
+
+      <div class="resultATotal">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+
+
+      <div id="imgvolcubo">
+        <img src="imagens/volcubo.png" alt="desenho de volume de um cubo">
+      </div>
+      <p>Volume do Cubo (Vt = a³)</p>
+
+      <div class="resultVCubo">
+        <!--O resultado o JS mostra aqui-->
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+<script src="app.js"></script>
+<footer class="rodape">
+  <div class="assinatura">@ Desenvolvido por
+    <a target="_blank" href="https://github.com/DGOBARBOSA">Diogo Barbosa</a>
+  </div>
+</footer>
+
+</html>
